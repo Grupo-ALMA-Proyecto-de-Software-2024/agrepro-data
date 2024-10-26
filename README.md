@@ -36,3 +36,16 @@ cd frontend/
 ```
 
 Follow the instructions in the frontend [README.md](./frontend/README.md) for setting up the environment, installing dependencies with npm, and running the development server.
+
+## Contributors
+
+This project was developed as part of the `Software Project` course at the Faculty of Physical and Mathematical Sciences, University of Chile. The following students contributed to the project:
+
+| Name               | GitHub Profile                                    |
+|--------------------|---------------------------------------------------|
+| Diego Carmona      | [github.com/Diego-Carmona](https://github.com/Diego-Carmona) |
+| Nicolás Cárcamo    | [github.com/nicolascarcamo](https://github.com/nicolascarcamo) |
+| Luciano Providel   | [github.com/Lu-desu](https://github.com/Lu-desu) |
+| Pablo Skewes       | [github.com/pabloskewes](https://github.com/pabloskewes) |
+| Bastián Vera       | [github.com/bverab](https://github.com/bverab) |
+| Franz Widerstrom   | [github.com/Franzo1](https://github.com/Franzo1) |
