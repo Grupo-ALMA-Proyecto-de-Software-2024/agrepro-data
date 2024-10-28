@@ -8,4 +8,12 @@ pull-submodules:
 
 # Initialize and update all submodules
 update-submodules:
-	git submodule update --init --recursive
+	git submodule update --init --recursive --remote --merge
+
+update:
+	make update-submodules
+
+	git commit -m "Update submodule references to latest commits" || echo "No changes in submodule references"
+
+	git push origin main
+	
