@@ -1,6 +1,9 @@
 [submodule "backend"]
-	path = backend
-	url = git@github.com:Grupo-ALMA-Proyecto-de-Software-2024/backend.git
+path = backend
+url = git@github.com:Grupo-ALMA-Proyecto-de-Software-2024/backend.git
+branch = main
+
 [submodule "frontend"]
-	path = frontend
-	url = git@github.com:Grupo-ALMA-Proyecto-de-Software-2024/frontend.git
+path = frontend
+url = git@github.com:Grupo-ALMA-Proyecto-de-Software-2024/frontend.git
+branch = master
