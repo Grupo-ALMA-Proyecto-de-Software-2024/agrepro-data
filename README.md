@@ -25,7 +25,7 @@ The backend is a Django-based application. To get started, navigate to the backe
 cd backend/
 ```
 
-Follow the instructions in the backend [README.md](./backend/README.md) for setting up the environment, installing dependencies with Poetry, and running the server.
+Follow the instructions in the backend [README.md](./backend/README.md) for setting up the environment, installing dependencies with uv, and running the server.
 
 ### Frontend
 
