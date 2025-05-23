@@ -15,13 +15,11 @@ services:
   frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile # Ensure you have a Dockerfile in your frontend directory
+      dockerfile: Dockerfile
     volumes:
       - ./frontend:/app
-      - /app/node_modules
-      - /app/.next
-    environment:
-      - NODE_ENV=development
+    env_file:
+      - ./frontend/.env
     command: npm run dev
     ports:
       - "3000:3000"
