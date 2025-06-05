@@ -1,0 +1,23 @@
+# This file provides development-specific overrides.
+# It is automatically merged with docker-compose.yaml when you run 'docker compose up'.
+services:
+  backend:
+    # Allow hot-reloading for the backend in development
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    # Build the 'development' stage from the Dockerfile
+    build:
+      target: development
+    # Mount the source code for hot-reloading and preserve node_modules
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    # Run the development server
+    command: npm run dev
+
+  nginx:
+    # In development, we don't strictly need depends_on as services can restart.
+    # Removing it can sometimes speed up the initial startup.
+    depends_on: []
