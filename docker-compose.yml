@@ -7,22 +7,22 @@ services:
     volumes:
       - static_volume:/app/static
       - media_volume:/app/media
-      - db_volume:/app/db
+      - db_volume:/app/db.sqlite3
     ports:
       - 8080:8000
     env_file:
       - ./backend/.env
 
-#  nginx:
-#    image: nginx:latest
-#    volumes:
-#      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-#      - static_volume:/app/static
-#      - media_volume:/app/media
-#    ports:
-#      - "8080:8080"
-#    depends_on:
-#      - django
+  #  nginx:
+  #    image: nginx:latest
+  #    volumes:
+  #      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+  #      - static_volume:/app/static
+  #      - media_volume:/app/media
+  #    ports:
+  #      - "8080:8080"
+  #    depends_on:
+  #      - django
 
   frontend:
     build: ./frontend
